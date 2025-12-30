@@ -1,5 +1,54 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Organetto';
+  src: url('/fonts/primary/Organetto-UltraBoldExt.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AudioSans';
+  src: url('/fonts/secondary/audiosans400.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AudioSans';
+  src: url('/fonts/secondary/audiosans500.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AudioSans';
+  src: url('/fonts/secondary/audiosans600.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AudioSans';
+  src: url('/fonts/secondary/audiosans700.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AudioSans';
+  src: url('/fonts/secondary/audiosans800.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AudioSans';
+  src: url('/fonts/secondary/audiosans900.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -8,8 +57,64 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: 'AudioSans', sans-serif;
+  
+  /* Custom Fonts */
+  --font-organetto: 'Organetto', sans-serif;
+  --font-audiosans: 'AudioSans', sans-serif;
+
+  /* Custom Colors */
+  /* Primary - #64AF84 */
+  --color-primary-50: #f7fbf8;
+  --color-primary-100: #e0efe6;
+  --color-primary-200: #c1dfcd;
+  --color-primary-300: #a2cfb5;
+  --color-primary-400: #83bf9c;
+  --color-primary-500: #64AF84;
+  --color-primary-600: #5a9d76;
+  --color-primary-700: #467a5c;
+  --color-primary-800: #325742;
+  --color-primary-900: #1e3427;
+  --color-primary: var(--color-primary-500);
+
+  /* Secondary - #B2CE8E */
+  --color-secondary-50: #fbfcf9;
+  --color-secondary-100: #eff5e8;
+  --color-secondary-200: #e0ebd1;
+  --color-secondary-300: #d0e1bb;
+  --color-secondary-400: #c1d7a4;
+  --color-secondary-500: #B2CE8E;
+  --color-secondary-600: #a0b97f;
+  --color-secondary-700: #7c9063;
+  --color-secondary-800: #596747;
+  --color-secondary-900: #353d2a;
+  --color-secondary: var(--color-secondary-500);
+
+  /* Accent - #77BA80 */
+  --color-accent-50: #f8fbf8;
+  --color-accent-100: #e3f1e5;
+  --color-accent-200: #c8e3cc;
+  --color-accent-300: #add5b2;
+  --color-accent-400: #92c799;
+  --color-accent-500: #77BA80;
+  --color-accent-600: #6ba773;
+  --color-accent-700: #538259;
+  --color-accent-800: #3b5d40;
+  --color-accent-900: #233726;
+  --color-accent: var(--color-accent-500);
+
+  /* Dark - #004931 */
+  --color-dark-50: #f2f5f4;
+  --color-dark-100: #ccdad5;
+  --color-dark-200: #99b6ac;
+  --color-dark-300: #669183;
+  --color-dark-400: #336d5a;
+  --color-dark-500: #004931;
+  --color-dark-600: #00412c;
+  --color-dark-700: #003322;
+  --color-dark-800: #002418;
+  --color-dark-900: #00150e;
+  --color-dark: var(--color-dark-500);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +127,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'AudioSans', Arial, Helvetica, sans-serif;
 }
