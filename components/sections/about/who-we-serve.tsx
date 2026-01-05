@@ -1,6 +1,6 @@
 "use client";
 
-import { FadeIn, StaggerContainer } from "@/components/ui/motion";
+import { FadeIn } from "@/components/ui/motion";
 import { Building, User, Users, Briefcase, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 

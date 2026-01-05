@@ -9,9 +9,7 @@ import {
   LifeBuoy, 
   Settings, 
   LogOut,
-  MoreHorizontal,
   ArrowUpRight,
-  ArrowDownLeft
 } from "lucide-react";
 
 export const MasterDashboardGraphic = () => {

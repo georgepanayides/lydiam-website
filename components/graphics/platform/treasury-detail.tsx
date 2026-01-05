@@ -1,6 +1,5 @@
-"use client";
 
-import { motion } from "framer-motion";
+
 import { Copy, MoreVertical } from "lucide-react";
 
 export const TreasuryDetailGraphic = () => {

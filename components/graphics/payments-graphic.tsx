@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Wifi, CreditCard } from "lucide-react";
+import { Wifi } from "lucide-react";
 import Image from "next/image";
 
 export function PaymentsGraphic() {

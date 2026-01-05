@@ -1,6 +1,6 @@
 "use client";
 
-import { Globe2, Building2, Scale } from "lucide-react";
+import { Globe2, Scale } from "lucide-react";
 import { GlobalMapGraphic } from "@/components/graphics/about/global-map";
 
 const regions = [

@@ -1,4 +1,4 @@
-"use client";
+
 
 import { Wallet, ArrowUpRight, ArrowDownLeft, ScanLine, CreditCard, RefreshCw, Bell, Menu } from "lucide-react";
 import Image from "next/image";

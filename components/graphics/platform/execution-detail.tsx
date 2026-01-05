@@ -1,4 +1,4 @@
-"use client";
+
 
 import { ArrowRight, ChevronDown, Calendar, Info } from "lucide-react";
 

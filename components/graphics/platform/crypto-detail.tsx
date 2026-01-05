@@ -1,6 +1,6 @@
-"use client";
 
-import { Bitcoin, TrendingUp, ShieldCheck, Wallet } from "lucide-react";
+
+import { Bitcoin, ShieldCheck, Wallet } from "lucide-react";
 
 export const CryptoDetailGraphic = () => {
   const assets = [
