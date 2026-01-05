@@ -61,7 +61,7 @@ const ComparisonSlider = () => {
     <div className="w-full max-w-6xl mx-auto">
       <div 
         ref={containerRef}
-        className="relative h-[600px] w-full rounded-3xl overflow-hidden cursor-ew-resize select-none shadow-[0_-25px_50px_-12px_rgba(0,0,0,0.15)] dark:shadow-[0_-25px_50px_-12px_rgba(0,0,0,0.5)] border border-gray-200 dark:border-dark-700 [mask-image:linear-gradient(to_bottom,black_85%,transparent_100%)]"
+        className="relative h-[500px] md:h-[600px] w-full rounded-3xl overflow-hidden cursor-ew-resize select-none shadow-[0_-25px_50px_-12px_rgba(0,0,0,0.15)] dark:shadow-[0_-25px_50px_-12px_rgba(0,0,0,0.5)] border border-gray-200 dark:border-dark-700 [mask-image:linear-gradient(to_bottom,black_85%,transparent_100%)]"
         onMouseDown={handleMouseDown}
         onTouchStart={handleMouseDown}
       >
@@ -261,7 +261,7 @@ const ComparisonSlider = () => {
 
 export const ProblemSolution = () => {
   return (
-    <section className="py-24 bg-dark-100/25 dark:bg-dark-900 overflow-hidden">
+    <section className="py-24 bg-gray-50 dark:bg-dark-900 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <FadeIn>

@@ -148,10 +148,10 @@ export const WhyLydiam = () => {
             </div>
 
             {/* Table Container */}
-            <div className="bg-white dark:bg-dark-800 rounded-3xl shadow-xl border border-gray-200 dark:border-dark-700 overflow-hidden">
+            <div className="bg-white dark:bg-dark-800 rounded-l-3xl rounded-r-none md:rounded-3xl shadow-xl border border-r-0 md:border-r border-gray-200 dark:border-dark-700 overflow-hidden overflow-x-auto -mr-4 md:mr-0">
               
               {/* Header */}
-              <div className="grid grid-cols-4 p-6 border-b border-gray-100 dark:border-dark-700 bg-gray-50/50 dark:bg-dark-800/50">
+              <div className="grid grid-cols-4 p-6 border-b border-gray-100 dark:border-dark-700 bg-gray-50/50 dark:bg-dark-800/50 min-w-[600px]">
                 <div className="col-span-1 font-bold text-gray-400 dark:text-gray-500 text-xs uppercase tracking-wider flex items-end pb-2">
                   
                 </div>
@@ -176,7 +176,7 @@ export const WhyLydiam = () => {
               </div>
 
               {/* Rows */}
-              <div className="divide-y divide-gray-100 dark:divide-dark-700">
+              <div className="divide-y divide-gray-100 dark:divide-dark-700 min-w-[600px]">
                 {features.map((feature, i) => (
                   <div 
                     key={i} 

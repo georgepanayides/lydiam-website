@@ -437,7 +437,7 @@ export const AtAGlance = () => {
   ];
 
   return (
-    <section className="relative py-24 bg-gray-50 dark:bg-dark-950 overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-gray-50 dark:bg-dark-900 overflow-hidden">
       {/* Background Texture */}
       <div className="absolute inset-0 opacity-[0.02] dark:opacity-[0.05] pointer-events-none mix-blend-multiply dark:mix-blend-overlay">
         <Image 

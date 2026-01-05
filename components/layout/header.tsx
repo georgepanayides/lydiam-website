@@ -37,7 +37,7 @@ export const Header = () => {
         <div className="flex items-center gap-4">
           <ThemeToggle />
           <Link href="/contact">
-            <Button variant="primary" size="sm">
+            <Button variant="gradient" size="sm">
               Get Started
             </Button>
           </Link>

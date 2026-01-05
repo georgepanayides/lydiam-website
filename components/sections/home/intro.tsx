@@ -5,7 +5,7 @@ import { IntroSlider } from "@/components/sections/home/intro-slider";
 
 export const Intro = () => {
   return (
-    <section className="relative py-24 md:py-32 bg-white dark:bg-dark-900 overflow-hidden">
+    <section className="relative py-16 md:py-32 bg-white dark:bg-dark-900 overflow-hidden">
       {/* Subtle Gradient Background */}
       <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] dark:opacity-[0.05] pointer-events-none">
         <Image 
@@ -52,21 +52,35 @@ export const Intro = () => {
             </p>
             <div className="flex gap-3 font-organetto text-dark-300 justify-center text-xs items-center">
             <p>UK</p>
-            <Image
-            src={'assets/logos/icons/Logo_Star Dark Green.svg'}
-            alt=""
-            width={5}
-            height={5}
-            className="w-2.5 h-2.5 object-cover"
-            />
+            <div className="relative w-2.5 h-2.5">
+              <Image
+                src={'/assets/logos/icons/Logo_Star Dark Green.svg'}
+                alt=""
+                fill
+                className="object-cover dark:hidden"
+              />
+              <Image
+                src={'/assets/logos/icons/Logo_Star Cool White.svg'}
+                alt=""
+                fill
+                className="object-cover hidden dark:block"
+              />
+            </div>
             <p>Europe</p>
-                        <Image
-            src={'assets/logos/icons/Logo_Star Dark Green.svg'}
-            alt=""
-            width={5}
-            height={5}
-            className="w-2.5 h-2.5 object-cover"
-            />
+            <div className="relative w-2.5 h-2.5">
+              <Image
+                src={'/assets/logos/icons/Logo_Star Dark Green.svg'}
+                alt=""
+                fill
+                className="object-cover dark:hidden"
+              />
+              <Image
+                src={'/assets/logos/icons/Logo_Star Cool White.svg'}
+                alt=""
+                fill
+                className="object-cover hidden dark:block"
+              />
+            </div>
             <p>Middle East</p>
             </div>
             </div>

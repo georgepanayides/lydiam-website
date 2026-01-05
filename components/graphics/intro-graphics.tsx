@@ -16,7 +16,7 @@ export const AdvisoryGraphic = () => {
         className="relative w-[320px] h-[650px] bg-[#1a1a1a] rounded-[3.5rem] shadow-2xl border-[6px] border-[#2a2a2a] ring-1 ring-white/10 overflow-hidden"
       >
         {/* Screen */}
-        <div className="absolute inset-[2px] bg-gray-50 dark:bg-dark-950 rounded-[3.2rem] overflow-hidden flex flex-col relative">
+        <div className="absolute inset-[2px] bg-gray-50 dark:bg-dark-900 rounded-[3.2rem] overflow-hidden flex flex-col relative">
             {/* Dynamic Island / Notch Area */}
             <div className="absolute top-0 left-0 right-0 h-14 z-30 flex justify-center pt-4 pointer-events-none overflow-hidden">
                 <div className="w-28 h-8 bg-black rounded-full flex items-center justify-between px-3">
@@ -50,7 +50,7 @@ export const AdvisoryGraphic = () => {
             </div>
 
             {/* Chat Content */}
-            <div className="flex-1 p-4 space-y-6 overflow-y-auto no-scrollbar pb-32 bg-gray-50 dark:bg-dark-950">
+            <div className="flex-1 p-4 space-y-6 overflow-y-auto no-scrollbar pb-32 bg-gray-50 dark:bg-dark-900">
                 <div className="text-center text-[10px] text-gray-400 my-4 font-medium uppercase tracking-wider">Today 9:41 AM</div>
 
                 {/* Message 1: User */}

@@ -7,49 +7,73 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-white dark:bg-dark-900 pt-20 lg:pt-0">
+    <section className="relative min-h-[auto] lg:min-h-[90vh] flex items-center overflow-hidden bg-white dark:bg-dark-900 pt-20 pb-12 lg:py-0">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
       
       {/* Animated Grid Stars */}
-      <StaggerContainer delay={0.4} staggerChildren={0.15} className="absolute inset-0 pointer-events-none">
-        <StaggerItem className="absolute top-[30%] right-[45%]">
+      <StaggerContainer delay={0.4} staggerChildren={0.15} className="absolute inset-x-0 top-0 h-[300px] lg:h-full lg:inset-0 pointer-events-none">
+        <StaggerItem className="absolute top-[15%] left-[10%] lg:top-[30%] lg:right-[45%] lg:left-auto">
           <div className="relative w-3 h-3 animate-pulse">
             <Image 
               src="/assets/logos/icons/Logo_Star Dark Green.svg" 
               alt="Star" 
               fill
-              className="object-contain drop-shadow-[0_0_8px_rgba(100,175,132,0.8)]"
+              className="object-contain drop-shadow-[0_0_8px_rgba(100,175,132,0.8)] dark:hidden"
+            />
+            <Image 
+              src="/assets/logos/icons/Logo_Star Cool White.svg" 
+              alt="Star" 
+              fill
+              className="object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] hidden dark:block"
             />
           </div>
         </StaggerItem>
-        <StaggerItem className="absolute top-[10%] right-[35%]">
+        <StaggerItem className="absolute top-[5%] right-[15%] lg:top-[10%] lg:right-[35%]">
           <div className="relative w-6 h-6 animate-pulse delay-300">
             <Image 
               src="/assets/logos/icons/Logo_Star Dark Green.svg" 
               alt="Star" 
               fill
-              className="object-contain drop-shadow-[0_0_8px_rgba(178,206,142,0.8)]"
+              className="object-contain drop-shadow-[0_0_8px_rgba(178,206,142,0.8)] dark:hidden"
+            />
+            <Image 
+              src="/assets/logos/icons/Logo_Star Cool White.svg" 
+              alt="Star" 
+              fill
+              className="object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] hidden dark:block"
             />
           </div>
         </StaggerItem>
-        <StaggerItem className="absolute top-[15%] right-[20%]">
+        <StaggerItem className="absolute top-[25%] right-[5%] lg:top-[15%] lg:right-[20%]">
           <div className="relative w-4 h-4 animate-pulse delay-700">
             <Image 
               src="/assets/logos/icons/Logo_Star Dark Green.svg" 
               alt="Star" 
               fill
-              className="object-contain drop-shadow-[0_0_8px_rgba(100,175,132,0.8)]"
+              className="object-contain drop-shadow-[0_0_8px_rgba(100,175,132,0.8)] dark:hidden"
+            />
+            <Image 
+              src="/assets/logos/icons/Logo_Star Cool White.svg" 
+              alt="Star" 
+              fill
+              className="object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] hidden dark:block"
             />
           </div>
         </StaggerItem>
-        <StaggerItem className="absolute top-[45%] right-[42%]">
+        <StaggerItem className="absolute top-[35%] left-[20%] lg:top-[45%] lg:right-[42%] lg:left-auto">
            <div className="relative w-5 h-5 animate-pulse delay-500">
             <Image 
               src="/assets/logos/icons/Logo_Star Dark Green.svg" 
               alt="Star" 
               fill
-              className="object-contain drop-shadow-[0_0_8px_rgba(119,186,128,0.8)]"
+              className="object-contain drop-shadow-[0_0_8px_rgba(119,186,128,0.8)] dark:hidden"
+            />
+            <Image 
+              src="/assets/logos/icons/Logo_Star Cool White.svg" 
+              alt="Star" 
+              fill
+              className="object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] hidden dark:block"
             />
           </div>
         </StaggerItem>
@@ -57,11 +81,11 @@ export const Hero = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-primary-500/10 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center">
           {/* Left Column: Content */}
-          <StaggerContainer className="text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
+          <StaggerContainer className="relative z-50 text-center lg:text-left max-w-2xl mx-auto lg:mx-0 order-2 lg:order-1 -mt-24 md:mt-0">
             <StaggerItem>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 dark:bg-primary-900/30 border border-primary-100 dark:border-primary-800 mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 dark:bg-primary-900/30 border border-primary-100 dark:border-primary-800 mb-6 backdrop-blur-sm">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
@@ -123,8 +147,14 @@ export const Hero = () => {
           </StaggerContainer>
 
           {/* Right Column: Graphic */}
-          <FadeIn direction="left" delay={0.2} className="relative hidden lg:block">
-             <HeroGraphic />
+          <FadeIn direction="left" delay={0.2} className="relative block mt-0 lg:mt-0 order-1 lg:order-2">
+             <div className="relative h-[350px] md:h-auto flex items-center justify-center -my-6 md:my-0 overflow-visible">
+                <div className="scale-[0.85] md:scale-100 origin-top md:origin-center mt-8 md:mt-0">
+                   <HeroGraphic className="h-[400px] md:h-[600px]" />
+                </div>
+             </div>
+             {/* Fade out mask for mobile */}
+             <div className="absolute inset-x-0 -bottom-30 h-80 z-40 bg-gradient-to-t from-white via-white/80 to-transparent dark:from-dark-900 dark:via-dark-900/80 md:hidden" />
           </FadeIn>
         </div>
       </div>

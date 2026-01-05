@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { CreditCard, TrendingUp, ShieldCheck, Globe, ArrowUpRight } from "lucide-react";
 
-export function HeroGraphic() {
+export function HeroGraphic({ className }: { className?: string }) {
   return (
-    <div className="relative w-full h-[400px] md:h-[600px] flex items-center justify-center perspective-1000">
+    <div className={`relative w-full flex items-center justify-center perspective-1000 ${className || "h-[400px] md:h-[600px]"}`}>
       {/* Abstract Background Glow */}
       <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-transparent rounded-full blur-3xl animate-pulse" />
 
@@ -91,21 +91,21 @@ export function HeroGraphic() {
       <motion.div
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/4 -right-4 md:right-10 z-30 bg-white dark:bg-dark-800 p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-dark-700 flex items-center gap-3"
+        className="absolute top-[15%] -right-12 md:-right-32 z-30 bg-white dark:bg-dark-800 p-4 md:p-5 rounded-2xl shadow-xl border border-gray-100 dark:border-dark-700 flex items-center gap-3 scale-105 md:scale-110"
       >
-        <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
-          <ShieldCheck className="w-6 h-6 text-green-600 dark:text-green-400" />
+        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+          <ShieldCheck className="w-6 h-6 md:w-7 md:h-7 text-green-600 dark:text-green-400" />
         </div>
         <div>
           <p className="text-xs text-gray-500">Security Status</p>
-          <p className="text-sm font-bold text-dark-900 dark:text-white">Protected</p>
+          <p className="text-sm md:text-base font-bold text-dark-900 dark:text-white">Protected</p>
         </div>
       </motion.div>
 
       <motion.div
         animate={{ y: [0, 20, 0] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-        className="absolute bottom-1/4 -left-4 md:left-10 z-10 bg-white dark:bg-dark-800 p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-dark-700"
+        className="absolute bottom-[20%] -left-16 md:-left-32 z-10 bg-white dark:bg-dark-800 p-4 md:p-5 rounded-2xl shadow-xl border border-gray-100 dark:border-dark-700 scale-105 md:scale-110"
       >
         <div className="flex items-center gap-3 mb-2">
           <div className="w-2 h-2 rounded-full bg-primary-500" />
@@ -114,12 +114,12 @@ export function HeroGraphic() {
         <div className="flex items-center gap-4">
           <div>
             <p className="text-xs text-gray-400">GBP/USD</p>
-            <p className="text-sm font-bold text-dark-900 dark:text-white">1.2745</p>
+            <p className="text-sm md:text-base font-bold text-dark-900 dark:text-white">1.2745</p>
           </div>
           <div className="h-8 w-[1px] bg-gray-200 dark:bg-dark-600" />
           <div>
             <p className="text-xs text-gray-400">EUR/USD</p>
-            <p className="text-sm font-bold text-dark-900 dark:text-white">1.0921</p>
+            <p className="text-sm md:text-base font-bold text-dark-900 dark:text-white">1.0921</p>
           </div>
         </div>
       </motion.div>

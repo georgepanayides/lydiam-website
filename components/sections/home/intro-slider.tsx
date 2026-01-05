@@ -91,7 +91,7 @@ export function IntroSlider() {
       </div>
 
       {/* Graphic Preview */}
-      <div className="relative h-[500px] w-full overflow-hidden rounded-3xl border border-green-100/50 dark:border-green-900/20 bg-green-50/30 dark:bg-green-900/5 [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]">
+      <div className="relative h-[400px] md:h-[500px] w-full overflow-hidden rounded-3xl border border-green-100/50 dark:border-green-900/20 bg-green-50/30 dark:bg-green-900/5 [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]">
 
          <AnimatePresence mode="wait">
            <motion.div
